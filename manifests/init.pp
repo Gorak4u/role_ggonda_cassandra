@@ -1,1 +1,3 @@
-class role_ggonda_cassandra {  include profile_ggonda_cassandr}
+class role_ggonda_cassandra {
+  include profile_ggonda_cassandr
+}

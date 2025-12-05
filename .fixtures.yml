@@ -1,1 +1,26 @@
-fixtures:  forge_modules:  repositories:    profile_ggonda_cassandr:      repo: 'https://github.com/ggonda/profile_ggonda_cassandr.git'      ref: 'v2.1.0'
+fixtures:
+  symlinks:
+    role_ggonda_cassandra: "#{source_dir}"
+    # For testing, we mock the existence of profile_ggonda_cassandr locally
+    profile_ggonda_cassandr: "#{source_dir}/spec/fixtures/modules/profile_ggonda_cassandr"
+
+# --- Dummy profile_ggonda_cassandr for testing (should be placed at spec/fixtures/modules/profile_ggonda_cassandr/manifests/init.pp) ---
+# class profile_ggonda_cassandr (
+#   $cluster_name = 'default',
+#   $cassandra_version = 'unknown',
+#   $java_version = 'unknown',
+#   $seeds = '127.0.0.1',
+#   $max_heap_size = '1G',
+#   $datacenter = 'dc1',
+#   $rack = 'rack1',
+#   $gc_type = 'G1GC',
+#   $cassandra_password = 'password',
+#   $data_directory = '/var/lib/cassandra/data',
+#   $commitlog_directory = '/var/lib/cassandra/commitlog',
+#   $disable_swap_tune_os = false,
+#   $replace_dead_node_ip = '',
+#   $enable_range_repair_script = false,
+# ) {
+#   # This is a dummy profile for testing purposes.
+#   # The real implementation would contain the Cassandra setup logic.
+# }

@@ -1,1 +1,3 @@
-mod 'profile_ggonda_cassandr',  :git => 'https://github.com/ggonda/profile_ggonda_cassandr.git',  :ref => 'v2.1.0'
+mod 'profile_ggonda_cassandr',
+  :git => 'https://YOUR_GIT_REPO_URL/profile_ggonda_cassandr.git',
+  :tag => 'v2.1.0'
