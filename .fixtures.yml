@@ -1,0 +1,1 @@
+fixtures: repositories: profile_ggonda_cassandr: repo: 'https://github.com/ggonda/puppet-profile-cassandra.git' ref: 'v2.1.0'

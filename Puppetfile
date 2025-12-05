@@ -1,0 +1,1 @@
+mod 'profile_ggonda_cassandr', :git => 'https://github.com/ggonda/puppet-profile-cassandra.git', :tag => 'v2.1.0'
